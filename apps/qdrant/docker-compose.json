@@ -4,19 +4,7 @@
       "name": "qdrant",
       "image": "qdrant/qdrant:v1.14.1",
       "isMain": true,
-      "internalPort": "6333",
-      "volumes": [
-        {
-          "hostPath": "${APP_DATA_DIR}/data/storage",
-          "containerPath": "/qdrant/storage"
-        }
-      ],
-      "ports": [
-        {
-          "containerPort": "6334",
-          "hostPort": "6334"
-        }
-      ]
+      "internalPort": "6333"
     }
   ]
 }

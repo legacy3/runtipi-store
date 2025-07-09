@@ -1,0 +1,28 @@
+{
+  "services": [
+    {
+      "name": "notifiarr",
+      "image": "golift/notifiarr:latest",
+      "isMain": true,
+      "internalPort": "5454",
+      "hostname": "notifiarr",
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/config",
+          "containerPath": "/config",
+          "readOnly": false
+        },
+        {
+          "hostPath": "/var/run/utmp",
+          "containerPath": "/var/run/utmp",
+          "readOnly": true
+        },
+        {
+          "hostPath": "/etc/machine-id",
+          "containerPath": "/etc/machine-id",
+          "readOnly": true
+        }
+      ]
+    }
+  ]
+}

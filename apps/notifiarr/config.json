@@ -1,0 +1,24 @@
+{
+  "name": "Notifiarr",
+  "id": "notifiarr",
+  "available": true,
+  "short_desc": "Unified notification platform for *arr applications and media servers.",
+  "author": "golift",
+  "port": 5454,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Notifiarr is a unified notification platform that connects your *arr applications (Sonarr, Radarr, etc.) and media servers to various notification services like Discord, Telegram, and more.",
+  "tipi_version": 2,
+  "version": "latest",
+  "source": "https://github.com/Notifiarr/notifiarr",
+  "exposable": true,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1736388392000,
+  "updated_at": 1736388392000,
+  "dynamic_config": true,
+  "form_fields": []
+}

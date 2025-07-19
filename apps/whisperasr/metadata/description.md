@@ -1,4 +1,4 @@
-# Whisper ASR (CPU)
+# Whisper ASR
 
 OpenAI Whisper ASR (Automatic Speech Recognition) web service that provides high-quality speech-to-text transcription capabilities using CPU processing only. This service is based on OpenAI's Whisper model and offers a simple REST API for audio transcription without requiring GPU hardware.
 

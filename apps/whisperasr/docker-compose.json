@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "whisperasr",
-      "image": "onerahmet/openai-whisper-asr-webservice:latest",
+      "image": "onerahmet/openai-whisper-asr-webservice:v1.9.1",
       "isMain": true,
       "internalPort": "9000",
       "environment": {

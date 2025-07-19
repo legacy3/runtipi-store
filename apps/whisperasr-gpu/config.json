@@ -11,14 +11,14 @@
   ],
   "description": "OpenAI Whisper ASR (Automatic Speech Recognition) web service that provides speech-to-text transcription capabilities with GPU acceleration support.",
   "tipi_version": 2,
-  "version": "latest-gpu",
+  "version": "v1.9.1-gpu",
   "source": "https://github.com/ahmetoner/whisper-asr-webservice",
   "exposable": true,
   "supported_architectures": [
     "amd64"
   ],
   "created_at": 1721390336000,
-  "updated_at": 1721390336000,
+  "updated_at": 1721391100000,
   "dynamic_config": true,
   "form_fields": []
 }

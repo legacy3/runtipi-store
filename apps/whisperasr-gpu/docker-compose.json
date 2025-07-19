@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "whisperasr-gpu",
-      "image": "onerahmet/openai-whisper-asr-webservice:latest-gpu",
+      "image": "onerahmet/openai-whisper-asr-webservice:v1.9.1-gpu",
       "isMain": true,
       "internalPort": "9000",
       "environment": {

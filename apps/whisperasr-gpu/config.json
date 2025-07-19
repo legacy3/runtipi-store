@@ -1,0 +1,24 @@
+{
+  "name": "Whisper ASR (GPU)",
+  "id": "whisperasr-gpu",
+  "available": true,
+  "short_desc": "OpenAI Whisper Automatic Speech Recognition web service with GPU acceleration (requires NVIDIA GPU).",
+  "author": "onerahmet",
+  "port": 9000,
+  "categories": [
+    "ai",
+    "utilities"
+  ],
+  "description": "OpenAI Whisper ASR (Automatic Speech Recognition) web service that provides speech-to-text transcription capabilities with GPU acceleration support.",
+  "tipi_version": 2,
+  "version": "latest-gpu",
+  "source": "https://github.com/ahmetoner/whisper-asr-webservice",
+  "exposable": true,
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1721390336000,
+  "updated_at": 1721390336000,
+  "dynamic_config": true,
+  "form_fields": []
+}

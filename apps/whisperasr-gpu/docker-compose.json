@@ -1,0 +1,27 @@
+{
+  "services": [
+    {
+      "name": "whisperasr-gpu",
+      "image": "onerahmet/openai-whisper-asr-webservice:latest-gpu",
+      "isMain": true,
+      "internalPort": "9000",
+      "environment": {
+        "ASR_MODEL": "small",
+        "ASR_ENGINE": "faster_whisper"
+      },
+      "deploy": {
+        "resources": {
+          "reservations": {
+            "devices": [
+              {
+                "driver": "nvidia",
+                "count": 1,
+                "capabilities": ["gpu"]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

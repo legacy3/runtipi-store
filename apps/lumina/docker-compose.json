@@ -1,0 +1,54 @@
+{
+  "services": [
+    {
+      "name": "lumina-postgres",
+      "image": "postgres:15.1-alpine",
+      "environment": {
+        "POSTGRES_USER": "lumina",
+        "POSTGRES_DB": "lumina",
+        "POSTGRES_PASSWORD": "1"
+      },
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/postgres_data",
+          "containerPath": "/var/lib/postgresql/data",
+          "readOnly": false
+        }
+      ],
+      "healthCheck": {
+        "test": "CMD pg_isready -U lumina",
+        "interval": "5s",
+        "timeout": "5s",
+        "retries": 10
+      }
+    },
+    {
+      "name": "lumina",
+      "image": "ghcr.io/naim94a/lumen:master",
+      "isMain": true,
+      "environment": {
+        "PKCSPASSWD": "${PKCSPASSWD}",
+        "DATABASE_URL": "postgres://lumina:1@lumina-postgres/lumina"
+      },
+      "internalPort": "1234",
+      "addPorts": [
+        {
+          "containerPort": 8082,
+          "hostPort": 8082,
+          "tcp": true,
+          "udp": false
+        }
+      ],
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/dockershare",
+          "containerPath": "/dockershare",
+          "readOnly": false
+        }
+      ],
+      "dependsOn": [
+        "lumina-postgres"
+      ]
+    }
+  ]
+}

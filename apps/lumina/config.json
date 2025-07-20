@@ -1,0 +1,33 @@
+{
+  "name": "Lumina",
+  "id": "lumina",
+  "available": true,
+  "short_desc": "Lumen - A modern web application with PostgreSQL database.",
+  "author": "naim94a",
+  "port": 1234,
+  "categories": [
+    "development",
+    "utilities"
+  ],
+  "description": "Lumina (Lumen) is a modern web application that provides various functionality with a PostgreSQL database backend. It includes additional port 8082 for extended services.",
+  "tipi_version": 2,
+  "version": "master",
+  "source": "https://github.com/naim94a/lumen",
+  "exposable": true,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1737409000000,
+  "updated_at": 1737409000000,
+  "dynamic_config": true,
+  "form_fields": [
+    {
+      "type": "text",
+      "label": "PKCS Password",
+      "hint": "Password for PKCS certificate",
+      "required": false,
+      "env_variable": "PKCSPASSWD"
+    }
+  ]
+}

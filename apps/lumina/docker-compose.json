@@ -30,7 +30,7 @@
         "PKCSPASSWD": "${PKCSPASSWD}",
         "DATABASE_URL": "postgres://lumina:1@lumina-postgres/lumina"
       },
-      "internalPort": "1234",
+      "internalPort": "3210",
       "addPorts": [
         {
           "containerPort": 8082,

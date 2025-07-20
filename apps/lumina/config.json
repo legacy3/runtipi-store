@@ -4,7 +4,7 @@
   "available": true,
   "short_desc": "Lumen - A modern web application with PostgreSQL database.",
   "author": "naim94a",
-  "port": 1234,
+  "port": 3210,
   "categories": [
     "development",
     "utilities"
@@ -19,7 +19,7 @@
     "amd64"
   ],
   "created_at": 1737409000000,
-  "updated_at": 1737409000000,
+  "updated_at": 1737409000001,
   "dynamic_config": true,
   "form_fields": [
     {

@@ -27,10 +27,12 @@
       "image": "ghcr.io/naim94a/lumen:master",
       "isMain": true,
       "environment": {
-        "PKCSPASSWD": "${PKCSPASSWD}",
-        "DATABASE_URL": "postgres://lumina:1@lumina-postgres/lumina"
+        "DATABASE_URL": "postgres://lumina:1@lumina-postgres/lumina",
+        "LUMEN_USER": "${LUMEN_USER}",
+        "LUMEN_PASS": "${LUMEN_PASS}",
+        "NO_TLS": "true"
       },
-      "internalPort": "3210",
+      "internalPort": "1234",
       "addPorts": [
         {
           "containerPort": 8082,

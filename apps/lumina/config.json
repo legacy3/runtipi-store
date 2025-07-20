@@ -1,15 +1,15 @@
 {
-  "name": "Lumina",
+  "name": "Lumen",
   "id": "lumina",
   "available": true,
-  "short_desc": "Lumen - A modern web application with PostgreSQL database.",
+  "short_desc": "A private Lumina server for IDA Pro 7.2+ function signature storage.",
   "author": "naim94a",
-  "port": 3210,
+  "port": 1234,
   "categories": [
     "development",
     "utilities"
   ],
-  "description": "Lumina (Lumen) is a modern web application that provides various functionality with a PostgreSQL database backend. It includes additional port 8082 for extended services.",
+  "description": "Lumen is a private Lumina server that can be used with IDA Pro 7.2+. It stores function signatures so you (and your team) can quickly identify functions that you found in the past using IDA's built-in Lumina features. Backed by PostgreSQL with experimental HTTP API.",
   "tipi_version": 2,
   "version": "master",
   "source": "https://github.com/naim94a/lumen",
@@ -19,15 +19,22 @@
     "amd64"
   ],
   "created_at": 1737409000000,
-  "updated_at": 1737409000001,
+  "updated_at": 1737409000002,
   "dynamic_config": true,
   "form_fields": [
     {
       "type": "text",
-      "label": "PKCS Password",
-      "hint": "Password for PKCS certificate",
+      "label": "Lumen Username",
+      "hint": "Username for Lumen authentication",
       "required": false,
-      "env_variable": "PKCSPASSWD"
+      "env_variable": "LUMEN_USER"
+    },
+    {
+      "type": "password",
+      "label": "Lumen Password",
+      "hint": "Password for Lumen authentication",
+      "required": false,
+      "env_variable": "LUMEN_PASS"
     }
   ]
 }
